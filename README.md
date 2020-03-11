@@ -20,13 +20,13 @@ pre-installed container/server).
 1. The code produced by you is expected to be of high quality.
 2. There are no detailed requirements, use common sense.
 
-#How to build
+# How to build
 
 ```
 ./mvnw clean package
 ```
 
-#How to run
+# How to run
 
 ```
 java -jar target/no-spring-transfer-1.0.0-SNAPSHOT-runner.jar
