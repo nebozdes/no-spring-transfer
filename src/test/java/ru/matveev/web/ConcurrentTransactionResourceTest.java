@@ -99,8 +99,6 @@ public class ConcurrentTransactionResourceTest extends CleanDBTest {
                 .when().get("/transaction?limit=77")
                 .then()
                 .statusCode(200)
-                .log()
-                .all()
                 .body("found", equalTo(200))
                 .body("results.size()", equalTo(77))
         ;

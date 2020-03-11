@@ -25,8 +25,6 @@ public class AccountResourceTest extends CleanDBTest {
                 .when().get("/account")
                 .then()
                 .statusCode(200)
-                .log()
-                .all()
                 .body("found", equalTo(2))
                 .body("results.size()", equalTo(2))
                 .body("results.get(0).id", equalTo(1))
