@@ -20,19 +20,21 @@ pre-installed container/server).
 1. The code produced by you is expected to be of high quality.
 2. There are no detailed requirements, use common sense.
 
-# How to build
+# How to 
+
+## Build package
 
 ```
 ./mvnw clean package
 ```
 
-# How to run
+## Run app
 
 ```
 java -jar target/no-spring-transfer-1.0.0-SNAPSHOT-runner.jar
 ```
 
-## Tests
+## Run tests
 
 ```
 ./mvnw clean test
@@ -48,7 +50,7 @@ java -jar target/no-spring-transfer-1.0.0-SNAPSHOT-runner.jar
 
 # API entry-points
 
-* GET http://localhost:8080/account - get information about all accounts in system
+* GET http://localhost:8080/account?page=0&limit=5 - - get information about all accounts in system
 * GET http://localhost:8080/account/{id} - get information about specific account
 * POST http://localhost:8080/transaction - create new transaction
-* GET http://localhost:8080/transaction?limit=200 - get list of transactions
+* GET http://localhost:8080/transaction?page=0&limit=200 - get list of transactions
